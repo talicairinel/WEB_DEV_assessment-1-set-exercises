@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J's Gallery</title>
+  <link rel="icon" href="media/COW.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Accessibility: keyboard users can skip navigation -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Page wrapper -->
+  <div class="page">
+
+    <!-- Header -->
+    <header class="site-header">
+      <h1>J's Gallery</h1>
+
+      <!-- Main navigation -->
+      <nav aria-label="Main navigation">
+        <a href="#" aria-current="page">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content">
+
+      <!-- Intro section -->
+      <section class="intro" aria-labelledby="intro-heading">
+        <h2 id="intro-heading" class="sr-only">Introduction</h2>
+
+        <img
+          src="media/COW.jpg"
+          alt="Highland cow standing on a rocky beach"
+          class="hero-image"
+        >
+
+        <p>
+          Lorem ipsum odor amet, consectetuer adipiscing elit. Praesent mollis adipiscing per id libero libero. Tempus pretium netus molestie scelerisque facilisis tristique volutpat ultricies. Nostra ligula ac pulvinar rutrum non rhoncus mauris facilisi. Quisque maximus commodo sollicitudin, montes congue imperdiet. Est malesuada vivamus vestibulum ante aenean class. Per integer aptent ullamcorper sagittis posuere dignissim morbi scelerisque. Fringilla primis sagittis lorem erat integer; vulputate nullam. Porta purus habitant id fermentum nec ex, proin mauris sem.
+        </p>
+
+        <p>
+          Lectus ultrices nibh lobortis tempus facilisis sit conubia taciti. Non torquent amet nibh elit ante fermentum praesent cras. Et suspendisse egestas eros erat aptent sollicitudin. Nulla tortor purus posuere auctor himenaeos malesuada. Turpis phasellus enim venenatis aliquam pellentesque senectus, id ultrices. Praesent tellus consequat phasellus cubilia mattis mauris natoque litora. Fringilla cursus montes inceptos nec venenatis platea.
+        </p>
+      </section>
+
+      <!-- Gallery -->
+      <section class="gallery" aria-labelledby="gallery-heading">
+        <h2 id="gallery-heading" class="sr-only">Gallery</h2>
+
+        <video controls aria-label="Autumn leaves video clip">
+          <source src="media/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <img src="media/img4598.jpg" alt="Train station lights in fog">
+        <img src="media/img4532.jpg" alt="Vintage camera close-up">
+        <img src="media/photo_2018_02_01.jpg" alt="Snowy mountain landscape with trees">
+        <img src="media/photo_2018_02_31.jpg" alt="Wide landscape with hills and cloudy sky">
+        <img src="media/johns car jpg.jpg" alt="Old car covered in snow near a building">
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
