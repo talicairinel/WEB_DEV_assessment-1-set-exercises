@@ -1,0 +1,144 @@
+:root {
+  /* New High-Contrast Palette */
+  --bg-main: #fdf6e3;    /* Soft parchment */
+  --bg-card: #eee8d5;    /* Slightly darker tan */
+  --text-main: #073642;  /* Deep dark teal/grey */
+  --accent: #268bd2;     /* Clear blue */
+  --button-bg: #002b36;  /* Very dark navy */
+  --button-text: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--button-bg);
+  color: white;
+  padding: 1rem;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid var(--bg-card);
+  padding-bottom: 1rem;
+}
+
+.site-title {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: bold;
+  gap: 8px;
+}
+
+.cart-link img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Print Display */
+.print-card {
+  margin: 0 0 3rem 0;
+  background: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.print-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+/* Button Styling */
+.add-button {
+  display: block;
+  width: calc(100% - 2rem);
+  margin: 0 1rem 1.5rem;
+  padding: 1rem;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.add-button:hover {
+  background-color: var(--accent);
+}
+
+.add-button:focus-visible {
+  outline: 4px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--bg-card);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--accent);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Helper Class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
